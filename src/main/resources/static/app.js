@@ -1,9 +1,14 @@
 async function sendToChatGPT() {
     const query = document.getElementById("query").value;
+    const table = document.getElementById("table").value;
+
     const response = await fetch("/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: query })
+        body: JSON.stringify({
+            question: query,
+            table: table
+        })
     });
 
     const resultText = await response.text();
