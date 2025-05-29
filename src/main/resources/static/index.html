@@ -42,12 +42,25 @@
         .btn {
             font-weight: bold;
         }
+        .form-control:hover,
+        .form-select:hover {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+            transition: all 0.2s ease-in-out;
+        }
+        /*.form-control:focus {*/
+        /*    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);*/
+        /*    border-color: #86b7fe;*/
+        /*    outline: none;*/
+        /*}*/
     </style>
 </head>
 <body>
 <div class="container-wide">
-    <h1>안양대학교 챗봇</h1>
-
+    <h1>
+        <img src="assets/anyang-univ.jpg" alt="안양대학교 로고" style="height: 36px;">
+        안양대학교 챗봇
+    </h1>
     <div class="input-group">
         <select id="table" class="form-select">
             <option value="OPEN_SUBJECTS">수업 정보</option>
